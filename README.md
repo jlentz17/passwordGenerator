@@ -6,9 +6,6 @@ For week three of bootcamp, I was given the assignment of making a random passwo
 
 <<<<<<< HEAD
 ![Image of Password Generator](./assets/img/passwordGenerator.png)
-=======
-![Image of Password Generator](./assets/img/passwordGenerator.png]
-)
 >>>>>>> 50c95a3b69030822a124568975ed2096224953a1
 
 # Description 
