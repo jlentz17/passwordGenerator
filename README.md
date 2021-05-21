@@ -1,6 +1,6 @@
 # Password Generator
 
-[For deployed version, click me](https://jlentz17.github.io/passwordGenerator/)
+[For deployed version, click me!!!](https://jlentz17.github.io/passwordGenerator/)
 
 In the third week of bootcamp, I was given the assignment of making a random password generator with JavaScript. The project came with the front end already built with html and css. Here's a screenshot of it:
 
@@ -20,9 +20,9 @@ When the button is clicked to generate a password, an alert comes up and asks th
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [CSS 3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [HTML 5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
-* [Markdown]
+* [Markdown](https://markdownguide.org/cheat-sheet/)
 
 
 ## Contributors
 
--Jeremy Lentz <br> <jlentz17@gmail.com> <br> &copy; 2020 Jeremy Lentz. All rights reserved.
+Jeremy Lentz <br> <jlentz17@gmail.com> <br> &copy; 2020 Jeremy Lentz. All rights reserved.
