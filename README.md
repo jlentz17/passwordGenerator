@@ -23,9 +23,4 @@ For week three of bootcamp, I was given the assignment of making a random passwo
 
 ## Contributors
 
-<<<<<<< HEAD
 -Jeremy Lentz <br> <jlentz17@gmail.com> <br> &copy; 2020 Jeremy Lentz. All rights reserved.
-=======
--Jeremy Lentz <br> <jlentz17@gmail.com> <br> &copy; 2020 Jeremy Lentz. All rights reserved.
-
->>>>>>> 50c95a3b69030822a124568975ed2096224953a1
