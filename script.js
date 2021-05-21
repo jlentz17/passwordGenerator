@@ -139,7 +139,7 @@ var generatePassword = function () {
     result += randomChoice;
   }
   return result;
-};
+}
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
