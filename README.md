@@ -4,7 +4,7 @@
 
 For week three of bootcamp, I was given the assignment of making a random password generator with JavaScript. The project came with a front end already built with CSS 3 and HTML 5, and looks like this:
 
-![Image of Password Generator](![jlentz17 github io_passwordGenerator_ (1)]
+![Image of Password Generator](passwordGenerator.png]
 )
 
 # Description 
