@@ -1,6 +1,6 @@
 // Assignment code here
-
-let lowerCase = [
+// Define global variables as array
+var lowerCase = [
   "a",
   "b",
   "c",
@@ -28,7 +28,7 @@ let lowerCase = [
   "y",
   "z",
 ];
-let upperCase = [
+var upperCase = [
   "A",
   "B",
   "C",
@@ -56,8 +56,8 @@ let upperCase = [
   "Y",
   "Z",
 ];
-let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-let special = [
+var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+var special = [
   "!",
   "@",
   "#",
@@ -75,70 +75,80 @@ let special = [
   "'",
 ];
 
-let generatePassword = function () {
+// create a function that generates password
+
+var generatePassword = function () {
   // ask user questions
-  let passwordLength = window.prompt(
+  // asks user How long password length should be and store it within the a variable
+  var passwordLength = window.prompt(
     "How long do you want your password to be?"
   );
+  // converts "" to integer(number)
   passwordLength = parseInt(passwordLength);
-  console.log(typeof passwordLength);
   // make an if statement!! if its between 8 and 128, make an alert "Must be between 8 and 128" Then start fun over again
   if (passwordLength < 8 || passwordLength > 128 || passwordLength === NaN) {
-    alert("Password needs to be between 8 and 28 characters");
+    alert("Password needs to be between 8 and 128 characters");
     return;
   }
-
-  let userChoices = [];
-
-  let includeNumbers = window.confirm(
+  // create an empty array and store it in userChoices variable
+  var userChoices = [];
+  // ask user yes or no; would you like password to have nums
+  var includeNumbers = window.confirm(
     "Would you like your password to include numbers?"
   );
-
+    // if its true add to userChoices
+    // concat adds to existing userChoices (num,case, spec char, etc)
   if (includeNumbers) {
     userChoices = userChoices.concat(numbers);
   }
-
-  let includeLowerCase = window.confirm(
+  var includeLowerCase = window.confirm(
     "Would you like your password to include lowercase characters?"
-  );
-
+    );
+    // if its true add to userChoices 
   if (includeLowerCase) {
     userChoices = userChoices.concat(lowerCase);
   }
-  let includeUpperCase = window.confirm(
+  var includeUpperCase = window.confirm(
     "Would you like your password to include uppercase characters?"
-  );
-
+    );
+    
+    // if its true add to userChoices 
   if (includeUpperCase) {
     userChoices = userChoices.concat(upperCase);
   }
 
-  let includeSpecialCharacters = window.confirm(
+  var includeSpecialCharacters = window.confirm(
     "Would you like your password to include special characters?"
   );
   if (includeSpecialCharacters) {
     userChoices = userChoices.concat(special);
   }
-  console.log(userChoices);
 
-  let result = "";
-  // now that you have all the usewrs options, write a for loop that will run for the amount of times the password length is.
-  for (let i = 0; i < passwordLength; i++) {
-    let index = userChoices[Math.floor(Math.random() * userChoices.length)];
-    result += index;
+  // if user didn't put any characters, throw alert
+  if(userChoices.length === 0){
+    window.alert("Enter Something!");
+    return;
+  }
+  // create(declare) a new variable so that the result is a string
+  var result = "";
+// create a loop that picks at random from userchoices * the password length
+  for (var i = 0; i < passwordLength; i++) {
+    var randomChoice =
+      userChoices[Math.floor(Math.random() * userChoices.length)];
+      // assinging randomChoice into result
+    result += randomChoice;
+  }
   return result;
 };
 
-
+// Get references to the #generate element
+var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  let password = generatePassword();
-  let passwordText = document.querySelector("#password");
-
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
   passwordText.value = password;
 }
-// Get references to the #generate element
-let generateBtn = document.querySelector("#generate");
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
